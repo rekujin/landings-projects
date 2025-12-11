@@ -8,60 +8,194 @@
 <body>
     <header>
         <div class="container">
-            <img class="logo" src="logo.png" alt="logo">
-            <nav>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/"><img src="logo.png" alt="logo"></a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav">
                 <ul>
-                    <li>HOMEPAGE</li>
-                    <li>ABOUT US</li>
-                    <li>SERVICES</li>
-                    <li>OUT PRICING</li>
-                    <li>CONTACT US</li>
+                    <li><a href="#hero">HOMEPAGE</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="pricing">OUT PRICING</a></li>
+                    <li><a href="contact">CONTACT US</a></li>
                 </ul>
             </nav>
-            <a href="/">RESERVATION</a>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button class="reservation-button">RESERVATION</a>
+            </div>
         </div>    
     </header>
 
-    <main>
+    <section id="hero">
         <div class="container">
-            <section class="main-section">
-                <div class="counter-block">
-                    <div class="barberman">
-                        <h2>40+</h2>
-                        <h3>Barberman</h3>
-                    </div>
 
-                    <div class="branch-store">
-                        <h2>25+</h2>
-                        <h3>Branch Store</h3>
-                    </div>
-
-                    <div class="happy-customers">
-                        <h2>999+</h2>
-                        <h3>Happy Customers</h3>
-                    </div>
+            <!-- Counters -->
+            <div class="hero__counters">
+                <div class="hero__counter">
+                    <h2 class="hero__counter-number">40+</h2>
+                    <p class="hero__counter-number">Barberman</p>
                 </div>
 
-                <div class="info-block">
-                    <div class="hours">
-                        <img src="clock.png" alt="clock">
-                        <h3>Open Hours</h3>
-                        <h4>Open Everyday</h4>
-                        <h4>08:00 - 21:00 WIB</h4>
-                    </div>
+                <div class="hero__counter">
+                    <h2 class="hero__counter-number">25+</h2>
+                    <p class="hero__counter-label">Branch Store</p>
+                </div>
+                <div class="hero__counter">
+                    <h2 class="hero__counter-number">999+</h2>
+                    <p class="hero__counter-label">Happy Customers</p>
+                </div>
+            </div>   
+            
+            <!-- Hero Info -->
+            <div class="hero__info">
+                <div class="hero__info-item">
+                    <img src="clock.png" alt="clock icon" class="hero__info-icon">
+                    <h3 class="hero__info-title">Open Hours</h3>
+                    <p class="hero__info-text">
+                    Open Everyday<br>08:00 - 21:00 WIB
+                    </p>
+                </div>
 
-                    <div class="contact">
-                        <img src="headphones.png" alt="contact">
-                        <h3>Lets Talk With Us</h3>
-                        <h4></h4>
-                        <a href="mailto:potongin@gmail.com">potongin@gmail.com</a>
+                <div class="hero__info-item">
+                    <img src="headphones.png" alt="contact icon" class="hero__info-icon">
+                    <h3 class="hero__info-title">Let's Talk With Us</h3>
+                    <p class="hero__info-text">
+                        <a href="mailto:potongin@gmail.com">potongin@gmail.com</a><br>
                         <a href="tel:+6285112345678">(+62) 851 1234 5678</a>
-                    </div>
+                    </p>
                 </div>
-            </section>
+            </div>
         </div>
-    </main>
+    </section>
 
+    <section id="about">
+        <div class="container">
+
+            <!-- About Images -->
+            <div class="about__images">
+                <img src="about-instruments.png" alt="Instruments used in our barber shop" class="about__image-item">
+                <img src="about-work.png" alt="Barber working on client" class="about__image-item">
+            </div>
+
+            <!-- About Info -->
+            <div class="about__info">
+                <h2 class="about__info-title">WHO WE ARE</h2>
+                <h3 class="about__info-subtitle">Professional Barberman & Haircut With Certification Team</h3>
+                <p class="about__info-text">
+                    The "Professional Barberman & Haircut With Certification Team" is a group of certified professionals skilled in haircutting and grooming. 
+                    They excel in various styles and prioritize client satisfaction, leaving individuals with a stylish and confident look.
+                </p>
+
+                <!-- About Advantages -->
+                <ul class="about__advantages-list">
+                    <li class="about__advantages-item">Certification Team</li>
+                    <li class="about__advantages-item">Perfect Worker</li>
+                    <li class="about__advantages-item">Many Style Hair</li>
+                    <li class="about__advantages-item">Years Of Experience</li>
+                    <li class="about__advantages-item">Money Back Guarantee</li>
+                    <li class="about__advantages-item">Professional Barberman</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+
+            <!-- Services Info -->
+            <div class="services__info">
+                <h2 class="services__info-title">SERVICES</h2>
+                <h3 class="services__info-subtitle">Our Barber Services</h3>
+                <p class="services__info-text">
+                    Our Barber Services offer a comprehensive range, including stylish haircuts, rejuvenating hair treatments, 
+                    therapeutic massages, and thorough hair cleaning, all designed to enhance your grooming experience and leave 
+                    you feeling refreshed and renewed.
+                </p>
+            </div>
+
+            <!-- Services Cards -->
+            <div class="services__cards">
+                <ul class="services__cards-list">
+                    <li class="services__card">
+                        <img src="scissors.png" alt="haircut icon" class="services__card-icon">
+                        <h3 class="services__card-title">Style Haircut</h3>
+                        <p class="services__card-text">
+                            Elevante your look, express your unique style
+                        </p>
+                    </li>
+                    <li class="services__card">
+                        <img src="wind.png" alt="treatment icon" class="services__card-icon">
+                        <h3 class="services__card-title">Hair Treatment</h3>
+                        <p class="services__card-text">
+                            Nurture and revitalize your locks
+                        </p>
+                    </li>
+                    <li class="services__card">
+                        <img src="leaf.png" alt="message icon" class="services__card-icon">
+                        <h3 class="services__card-title">Message</h3>
+                        <p class="services__card-text">
+                            Relax and unwind with our soothing techniques
+                        </p>
+                    </li>
+                    <li class="services__card">
+                        <img src="bath.png" alt="clean icon" class="services__card-icon">
+                        <h3 class="services__card-title">Clean Hair</h3>
+                        <p class="services__card-text">
+                            Fresh, healthy, and invigorated strands
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+
+        <!-- Benefits Info -->
+        <div class="benefits__info">
+            <h2 class="benefits__info-title">WHY CHOICE US</h2>
+            <h3 class="benefits__info-subtitle">We Give Best Work & Best Haircut & Treatments Experience For All Customers</h3>
+            <p class="benefits__info-text">
+                We provide the ultimate haircut and treatment experience,
+                ensuring the best results for all our customers
+            </p>
+
+            <!-- Benefits List -->
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <img src="calendar.png" alt="calendar icon" class="benefits__item-icon">
+                    <h3 class="benefits__item-title">Years Of Experiences</h3>
+                    <p class="benefits__item-text">Expertise honed over time</p>
+                </li>
+                <li class="benefits__item">
+                    <img src="badge.png" alt="badge icon" class="benefits__item-icon">
+                    <h3 class="benefits__item-title">Certefication Barber</h3>
+                    <p class="benefits__item-text">Accredited expertise in grooming</p>
+                </li>
+                <li class="benefits__item">
+                    <img src="camera.png" alt="camera icon" class="benefits__item-icon">
+                    <h3 class="benefits__item-title">Instagramable Place</h3>
+                    <p class="benefits__item-text">Pictures-perfect spot for capturing moments</p>
+                </li>
+                <li class="benefits__item">
+                    <img src="double-check-mark.png" alt="check mark icon" class="benefits__item-icon">
+                    <h3 class="benefits__item-title">Clean & Best Choicing</h3>
+                    <p class="benefits__item-text">Optimal and spotless selections</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Benefits Video -->
+        <div class="benefits__video">
+            <video src="benefits.mp4" controls poster="benefits-video.png"></video>
+        </div>
+    </section>
     <footer>
 
     </footer>
