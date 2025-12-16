@@ -1,203 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PotongIn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PotongIn</title>
 </head>
 <body>
-    <header>
-        <div class="container">
+  <header class="header">
+    <div class="header__inner">
 
-            <!-- Logo -->
-            <div class="logo">
-                <a href="/"><img src="logo.png" alt="logo"></a>
-            </div>
+      <a class="header__logo logo" href="/">
+        <img 
+          class="logo__image"
+          src="logo.png" 
+          alt="PotongIn logo"
+        />
+      </a>
 
-            <!-- Navigation -->
-            <nav class="nav">
-                <ul>
-                    <li><a href="#hero">HOMEPAGE</a></li>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="pricing">OUT PRICING</a></li>
-                    <li><a href="contact">CONTACT US</a></li>
-                </ul>
-            </nav>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#hero" class="nav__link">HOMEPAGE</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">ABOUT US</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">SERVICES</a>
+          </li>
+          <li class="nav__item">
+            <a href="#pricing" class="nav__link">OUR PRICING</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
 
-            <!-- Header Actions -->
-            <div class="header-actions">
-                <button class="reservation-button">RESERVATION</a>
-            </div>
-        </div>    
-    </header>
+      <button class="header__button button" type="button">RESERVATION</button>
+    </div>  
+  </header>
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1 class="visually-hidden">PotongIn - Professional Barber Shop</h1>
 
-    <section id="hero">
-        <div class="container">
+        <div class="hero__left">
+          <div class="counter hero__counter">
+            <span class="counter__value">40+</span>
+            <span class="counter__label">Barberman</span>
+          </div>
 
-            <!-- Counters -->
-            <div class="hero__counters">
-                <div class="hero__counter">
-                    <h2 class="hero__counter-number">40+</h2>
-                    <p class="hero__counter-number">Barberman</p>
-                </div>
-
-                <div class="hero__counter">
-                    <h2 class="hero__counter-number">25+</h2>
-                    <p class="hero__counter-label">Branch Store</p>
-                </div>
-                <div class="hero__counter">
-                    <h2 class="hero__counter-number">999+</h2>
-                    <p class="hero__counter-label">Happy Customers</p>
-                </div>
-            </div>   
-            
-            <!-- Hero Info -->
-            <div class="hero__info">
-                <div class="hero__info-item">
-                    <img src="clock.png" alt="clock icon" class="hero__info-icon">
-                    <h3 class="hero__info-title">Open Hours</h3>
-                    <p class="hero__info-text">
-                    Open Everyday<br>08:00 - 21:00 WIB
-                    </p>
-                </div>
-
-                <div class="hero__info-item">
-                    <img src="headphones.png" alt="contact icon" class="hero__info-icon">
-                    <h3 class="hero__info-title">Let's Talk With Us</h3>
-                    <p class="hero__info-text">
-                        <a href="mailto:potongin@gmail.com">potongin@gmail.com</a><br>
-                        <a href="tel:+6285112345678">(+62) 851 1234 5678</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-
-            <!-- About Images -->
-            <div class="about__images">
-                <img src="about-instruments.png" alt="Instruments used in our barber shop" class="about__image-item">
-                <img src="about-work.png" alt="Barber working on client" class="about__image-item">
-            </div>
-
-            <!-- About Info -->
-            <div class="about__info">
-                <h2 class="about__info-title">WHO WE ARE</h2>
-                <h3 class="about__info-subtitle">Professional Barberman & Haircut With Certification Team</h3>
-                <p class="about__info-text">
-                    The "Professional Barberman & Haircut With Certification Team" is a group of certified professionals skilled in haircutting and grooming. 
-                    They excel in various styles and prioritize client satisfaction, leaving individuals with a stylish and confident look.
-                </p>
-
-                <!-- About Advantages -->
-                <ul class="about__advantages-list">
-                    <li class="about__advantages-item">Certification Team</li>
-                    <li class="about__advantages-item">Perfect Worker</li>
-                    <li class="about__advantages-item">Many Style Hair</li>
-                    <li class="about__advantages-item">Years Of Experience</li>
-                    <li class="about__advantages-item">Money Back Guarantee</li>
-                    <li class="about__advantages-item">Professional Barberman</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-
-            <!-- Services Info -->
-            <div class="services__info">
-                <h2 class="services__info-title">SERVICES</h2>
-                <h3 class="services__info-subtitle">Our Barber Services</h3>
-                <p class="services__info-text">
-                    Our Barber Services offer a comprehensive range, including stylish haircuts, rejuvenating hair treatments, 
-                    therapeutic massages, and thorough hair cleaning, all designed to enhance your grooming experience and leave 
-                    you feeling refreshed and renewed.
-                </p>
-            </div>
-
-            <!-- Services Cards -->
-            <div class="services__cards">
-                <ul class="services__cards-list">
-                    <li class="services__card">
-                        <img src="scissors.png" alt="haircut icon" class="services__card-icon">
-                        <h3 class="services__card-title">Style Haircut</h3>
-                        <p class="services__card-text">
-                            Elevante your look, express your unique style
-                        </p>
-                    </li>
-                    <li class="services__card">
-                        <img src="wind.png" alt="treatment icon" class="services__card-icon">
-                        <h3 class="services__card-title">Hair Treatment</h3>
-                        <p class="services__card-text">
-                            Nurture and revitalize your locks
-                        </p>
-                    </li>
-                    <li class="services__card">
-                        <img src="leaf.png" alt="message icon" class="services__card-icon">
-                        <h3 class="services__card-title">Message</h3>
-                        <p class="services__card-text">
-                            Relax and unwind with our soothing techniques
-                        </p>
-                    </li>
-                    <li class="services__card">
-                        <img src="bath.png" alt="clean icon" class="services__card-icon">
-                        <h3 class="services__card-title">Clean Hair</h3>
-                        <p class="services__card-text">
-                            Fresh, healthy, and invigorated strands
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="benefits">
-
-        <!-- Benefits Info -->
-        <div class="benefits__info">
-            <h2 class="benefits__info-title">WHY CHOICE US</h2>
-            <h3 class="benefits__info-subtitle">We Give Best Work & Best Haircut & Treatments Experience For All Customers</h3>
-            <p class="benefits__info-text">
-                We provide the ultimate haircut and treatment experience,
-                ensuring the best results for all our customers
+          <div class="counter hero__counter">
+            <span class="counter__value">25+</span>
+            <span class="counter__label">Branch Store</span>
+          </div>
+          <div class="counter hero__counter">
+            <span class="counter__value">999+</span>
+            <span class="counter__label">Happy Customers</span>
+          </div>
+        </div>   
+        
+        <div class="hero__right">
+          <article class="info-card info-card--hero">
+            <img class="info-card__icon" src="clock.png" alt="clock icon">
+            <h3 class="info-card__title">Open Hours</h3>
+            <p class="info-card__text">
+            Open Everyday<br>08:00 - 21:00 WIB
             </p>
+          </article>
 
-            <!-- Benefits List -->
-            <ul class="benefits__list">
-                <li class="benefits__item">
-                    <img src="calendar.png" alt="calendar icon" class="benefits__item-icon">
-                    <h3 class="benefits__item-title">Years Of Experiences</h3>
-                    <p class="benefits__item-text">Expertise honed over time</p>
-                </li>
-                <li class="benefits__item">
-                    <img src="badge.png" alt="badge icon" class="benefits__item-icon">
-                    <h3 class="benefits__item-title">Certefication Barber</h3>
-                    <p class="benefits__item-text">Accredited expertise in grooming</p>
-                </li>
-                <li class="benefits__item">
-                    <img src="camera.png" alt="camera icon" class="benefits__item-icon">
-                    <h3 class="benefits__item-title">Instagramable Place</h3>
-                    <p class="benefits__item-text">Pictures-perfect spot for capturing moments</p>
-                </li>
-                <li class="benefits__item">
-                    <img src="double-check-mark.png" alt="check mark icon" class="benefits__item-icon">
-                    <h3 class="benefits__item-title">Clean & Best Choicing</h3>
-                    <p class="benefits__item-text">Optimal and spotless selections</p>
-                </li>
-            </ul>
+          <article class="info-card info-card--hero">
+            <img class="info-card__icon" src="headphones.png" alt="contact icon">
+            <h3 class="info-card__title">Let's Talk With Us</h3>
+            <p class="info-card__text">
+              <a class="info-card__link" href="mailto:potongin@gmail.com">potongin@gmail.com</a><br>
+              <a class="info-card__link" href="tel:+6285112345678">(+62) 851 1234 5678</a>
+            </p>
+          </article>
         </div>
-
-        <!-- Benefits Video -->
-        <div class="benefits__video">
-            <video src="benefits.mp4" controls poster="benefits-video.png"></video>
-        </div>
+      </div>
     </section>
-    <footer>
 
-    </footer>
+    <section class="about" id="about">
+      <div class="container">
+
+        <div class="about__images">
+          <img class="about__image about__image--base" src="about-instruments.png" alt="Instruments used in our barber shop">
+          <img class="about__image about__image--inset" src="about-work.png" alt="Barber working on client">
+        </div>
+
+        <div class="about__content">
+          <h2 class="about__title">WHO WE ARE</h2>
+          <h3 class="about__subtitle">Professional Barberman & Haircut With Certification Team</h3>
+          <p class="about__text">
+            The "Professional Barberman & Haircut With Certification Team" is a group of certified professionals skilled in haircutting and grooming. 
+            They excel in various styles and prioritize client satisfaction, leaving individuals with a stylish and confident look.
+          </p>
+
+          <ul class="about__advantages">
+            <li class="about__advantage">Certification Team</li>
+            <li class="about__advantage">Perfect Worker</li>
+            <li class="about__advantage">Many Style Hair</li>
+            <li class="about__advantage">Years Of Experience</li>
+            <li class="about__advantage">Money Back Guarantee</li>
+            <li class="about__advantage">Professional Barberman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="services__info">
+          <h2 class="services__title">SERVICES</h2>
+          <h3 class="services__subtitle">Our Barber Services</h3>
+          <p class="services__text">
+            Our Barber Services offer a comprehensive range, including stylish haircuts, rejuvenating hair treatments, 
+            therapeutic massages, and thorough hair cleaning, all designed to enhance your grooming experience and leave 
+            you feeling refreshed and renewed.
+          </p>
+        </div>
+
+        <ul class="services__list">
+          <li class="services__item">
+            <article class="info-card info-card--service">
+              <img class="info-card__icon" src="scissors.png" alt="haircut icon">
+              <h3 class="info-card__title">Style Haircut</h3>
+              <p class="info-card__text">
+                Elevate your look, express your unique style
+              </p>
+            </article>
+          </li>
+          <li class="services__item">
+            <article class="info-card info-card--service">
+              <img class="info-card__icon" src="wind.png" alt="treatment icon">
+              <h3 class="info-card__title">Hair Treatment</h3>
+              <p class="info-card__text">
+                Nurture and revitalize your locks
+              </p>
+            </article>
+          </li>
+          <li class="services__item">
+            <article class="info-card info-card--service">
+              <img class="info-card__icon" src="leaf.png" alt="massage icon">
+              <h3 class="info-card__title">Massage</h3>
+              <p class="info-card__text">
+                Relax and unwind with our soothing techniques
+              </p>
+            </article>
+          </li>
+          <li class="services__item">
+            <article class="info-card info-card--service">
+              <img class="info-card__icon" src="bath.png" alt="clean icon">
+              <h3 class="info-card__title">Clean Hair</h3>
+              <p class="info-card__text">
+                Fresh, healthy, and invigorated strands
+              </p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="benefits__content">
+          <h2 class="benefits__title">WHY CHOOSE US</h2>
+          <h3 class="benefits__subtitle">We Give Best Work & Best Haircut & Treatments Experience For All Customers</h3>
+          <p class="benefits__text">
+            We provide the ultimate haircut and treatment experience,
+            ensuring the best results for all our customers
+          </p>
+
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="calendar.png" alt="calendar icon">
+                <h3 class="benefit-card__title">Years Of Experiences</h3>
+                <p class="benefit-card__text">Expertise honed over time</p>
+              </article>
+            </li>
+            <li class="benefits__item">
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="badge.png" alt="badge icon">
+                <h3 class="benefit-card__title">Certification Barber</h3>
+                <p class="benefit-card__text">Accredited expertise in grooming</p>
+              </article>
+            </li>
+            <li class="benefits__item">
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="camera.png" alt="camera icon">
+                <h3 class="benefit-card__title">Instagramable Place</h3>
+                <p class="benefit-card__text">Pictures-perfect spot for capturing moments</p>
+              </article>
+            </li>
+            <li class="benefits__item">
+              <article class="benefit-card">
+                <img class="benefit-card__icon" src="double-check-mark.png" alt="check mark icon">
+                <h3 class="benefit-card__title">Clean & Best Choicing</h3>
+                <p class="benefit-card__text">Optimal and spotless selections</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+
+        <video class="benefits__video" src="benefits.mp4" controls poster="benefits-video.png"></video>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="pricing__content">
+          <h2 class="pricing__title">OUR PACKAGE</h2>
+          <h3 class="pricing__subtitle">Best Recommendation Price</h3>
+          <p class="pricing__text">
+            Best Recommendation Price refers to the top suggested value for a product or service, 
+            offering a balance between quality and affordability.
+          </p>
+        </div>
+
+        <ul class="pricing__list">
+          <li class="pricing__item">
+            <article class="pricing-card">
+              <h3 class="pricing-card__title">Basic</h3>
+              <p class="pricing-card__subtitle">Rp 50.000</p>
+              <hr class="pricing-card__divider">
+              <p class="pricing-card__text">Essential service at an affordable price</p>
+              <ul class="pricing-card__list">
+                <li class="pricing-card__item">Haircut Modern Style</li>
+                <li class="pricing-card__item">Easy Hair Treatment</li>
+                <li class="pricing-card__item">Hair Color ( Optional )</li>
+                <li class="pricing-card__item">Easy Massage</li>
+                <li class="pricing-card__item">Haircut 7 Day Guarantee</li>
+              </ul>
+              <hr class="pricing-card__divider">
+              <button class="pricing-card__button button">RESERVATION</button>
+            </article>
+          </li>
+          <li class="pricing__item">
+            <article class="pricing-card pricing-card--popular">
+              <h3 class="pricing-card__title">Medium</h3>
+              <p class="pricing-card__subtitle">Rp 100.000</p>
+              <hr class="pricing-card__divider">
+              <p class="pricing-card__text">A balanced option with value and quality</p>
+              <ul class="pricing-card__list">
+                <li class="pricing-card__item">Haircut Modern Style</li>
+                <li class="pricing-card__item">Medium Hair Treatment</li>
+                <li class="pricing-card__item">Hair Color ( Optional )</li>
+                <li class="pricing-card__item">Medium Massage</li>
+                <li class="pricing-card__item">Haircut 14 Day Guarantee</li>
+              </ul>
+              <hr class="pricing-card__divider">
+              <button class="pricing-card__button button">RESERVATION</button>
+            </article>
+          </li>
+          <li class="pricing__item">
+            <article class="pricing-card">
+              <h3 class="pricing-card__title">Professional</h3>
+              <p class="pricing-card__subtitle">Rp 150.000</p>
+              <hr class="pricing-card__divider">
+              <p class="pricing-card__text">Premium service for discerning clients</p>
+              <ul class="pricing-card__list">
+                <li class="pricing-card__item">Haircut Modern Style</li>
+                <li class="pricing-card__item">Full Hair Treatment</li>
+                <li class="pricing-card__item">Best Hair Color</li>
+                <li class="pricing-card__item">Full Massage Ticket</li>
+                <li class="pricing-card__item">Full Free Guarantee</li>
+              </ul>
+              <hr class="pricing-card__divider">
+              <button class="pricing-card__button button">RESERVATION</button>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="influencers" id="influencers">
+      <div class="container">
+        <ul class="influencers__list">
+          <li class="influencers__item">
+            <article class="influencer-card">
+              <div class="influencer-card__media">
+                <img class="influencer-card__poster" src="poster.jpg" alt="Mr. Stiven - influencer testimonial">
+                <button class="influencer-card__play-button" aria-label="Play video">
+                  <svg>...</svg>
+                </button>
+              </div>
+              
+              <div class="influencer-card__info">
+                <h3 class="influencer-card__title">INFLUENCER</h3>
+                <p class="influencer-card__subtitle">Mr. Stiven</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="influencers__item">
+            <article class="influencer-card">
+              <div class="influencer-card__media">
+                <img class="influencer-card__poster" src="poster.jpg" alt="Mr. Joe - influencer testimonial">
+                <button class="influencer-card__play-button" aria-label="Play video">
+                  <!-- play-icon -->
+                </button>
+              </div>
+              
+              <div class="influencer-card__info">
+                <h3 class="influencer-card__title">INFLUENCER</h3>
+                <p class="influencer-card__subtitle">Mr. Joe</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="influencers__item">
+            <article class="influencer-card">
+              <div class="influencer-card__media">
+                <img class="influencer-card__poster" src="poster.jpg" alt="Mr. Ahmad - influencer testimonial">
+                <button class="influencer-card__play-button" aria-label="Play video">
+                  <!-- play-icon -->
+                </button>
+              </div>
+              
+              <div class="influencer-card__info">
+                <h3 class="influencer-card__title">INFLUENCER</h3>
+                <p class="influencer-card__subtitle">Mr. Ahmad</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testimonial" id="testimonial">
+      <div class="container">
+        <div class="testimonial__media">
+          <img class="testimonial__image" src="testimonal-work.png" alt="Barber working on client">
+          <video class="testimonial__video" src="testimonial.mp4" controls poster="testimonial-video.png"></video>
+        </div>
+
+        <div class="testimonial__content">
+          <h2 class="testimonial__title">CLIENT TESTIMONIAL</h2>
+          <h3 class="testimonial__subtitle">Many People Have Used Our Barber Services & They Happy With Best Feedback For Us</h3>
+          <p class="testimonial__text">
+            Numerous individuals have availed our barber services and expressed
+            their satisfaction through overwhelmingly positive feedback.
+          </p>
+
+          <div class="review testimonial__review">
+            <ul class="review__stars">
+              <li class="review__star">
+                <!-- star icon -->
+              </li>
+              <li class="review__star">
+                <!-- star icon -->
+              </li>
+              <li class="review__star">
+                <!-- star icon -->
+              </li>
+              <li class="review__star">
+                <!-- star icon -->
+              </li>
+              <li class="review__star review__star--half">
+                <!-- half-star icon -->
+              </li>
+            </ul>
+            <blockquote class="review__text">
+              Absolutely thrilled with the haircut I received from your team! The attention to detail and 
+              precision in styling was impressive. I'll definitely be returning for future grooming needs.
+            </blockquote>
+            <div class="review__author">
+              <img class="review__avatar" src="review-avatar.png" alt="Mr. Jack avatar">
+              <p class="review__name">Mr. Jack</p>
+              <p class="review__role">BUSINESSMAN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <!--В процессе -->
+    </div>
+  </footer>
 </body>
 </html>
